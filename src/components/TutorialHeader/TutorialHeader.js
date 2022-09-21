@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
+import { Link } from 'react-router-dom';
 import {
   Header,
   HeaderContainer,
@@ -14,7 +15,6 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from '@carbon/react';
-import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -29,6 +29,7 @@ const TutorialHeader = () => (
         <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
+
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem element={Link} to="/repos">
             Repositories
